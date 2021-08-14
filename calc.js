@@ -33,6 +33,9 @@ do
 		case 5:
 			mat1();
 			break;
+		case 6:
+			sobre();
+			break;
 
 		default:
 			console.log("\n\nDIGITE UMA DAS OPCOES ACIMA");
@@ -54,6 +57,7 @@ function imprimirMenu()
 	console.log('(3) Multiplicar');
 	console.log('(4) Determinante');
 	console.log('(5) Transposta');
+	console.log('(6) Sobre');
 	console.log('(0) Sair');
 }
 
@@ -61,11 +65,11 @@ function somam(matriz1, matriz2)
 {
 	console.log();
 	//Matriz 1
-	var linhas1 = Number(prompt('m1 Digite a quantidade de linhas da matriz: '));
-	var colunas1 = Number(prompt('m1 Digite a quantidade de colunas da matriz: '));
+	var linhas1 = Number(prompt('Matriz 1 - Digite a quantidade de linhas da matriz: '));
+	var colunas1 = Number(prompt('Matriz 1 - Digite a quantidade de colunas da matriz: '));
 	//Matriz 2
-	var linhas2 = Number(prompt('m2 Digite a quantidade de linhas da matriz: '));
-	var colunas2 = Number(prompt('m2 Digite a quantidade de colunas da matriz: '));
+	var linhas2 = Number(prompt('Matriz 2 - Digite a quantidade de linhas da matriz: '));
+	var colunas2 = Number(prompt('Matriz 2 - Digite a quantidade de colunas da matriz: '));
 
 	if(linhas1 == linhas2 && colunas1 == colunas2)
 	{
@@ -83,7 +87,7 @@ function somam(matriz1, matriz2)
 		{
 			for(var c = 0; c < colunas1; c++)
 			{
-				matriz1[l][c] = Number(prompt(`Matriz 1 linha ${l} ,coluna ${c} :`));
+				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l} ,coluna ${c} :`));
 			}
 		}
 		//Matriz 2
@@ -100,7 +104,7 @@ function somam(matriz1, matriz2)
 		{
 			for(var c = 0; c < colunas2; c++)
 			{
-				matriz2[l][c] = Number(prompt(`Matriz 2 linha ${l} ,coluna ${c} :`));
+				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l} ,coluna ${c} :`));
 			}
 		}
 		//somar
@@ -123,7 +127,7 @@ function somam(matriz1, matriz2)
     	console.log('A soma eh : ' + results + '\n');
 	}else
 	{
-		console.log('As matrizes devem ter a msm ordem');
+		console.log('Impossível realizar a operação, por favor escolha matrizes de mesma ordem.');
 	}
 }
 
@@ -131,11 +135,11 @@ function subm()
 {
 	console.log();
 	//Matriz 1
-	var linhas1 = Number(prompt('m1 Digite a quantidade de linhas da matriz: '));
-	var colunas1 = Number(prompt('m1 Digite a quantidade de colunas da matriz: '));
+	var linhas1 = Number(prompt('Matriz 1 - Digite a quantidade de linhas da matriz: '));
+	var colunas1 = Number(prompt('Matriz 1 - Digite a quantidade de colunas da matriz: '));
 	//Matriz 2
-	var linhas2 = Number(prompt('m2 Digite a quantidade de linhas da matriz: '));
-	var colunas2 = Number(prompt('m2 Digite a quantidade de colunas da matriz: '));
+	var linhas2 = Number(prompt('Matriz 2 - Digite a quantidade de linhas da matriz: '));
+	var colunas2 = Number(prompt('Matriz 2 - Digite a quantidade de colunas da matriz: '));
 	if(linhas1 == linhas2 && colunas1 == colunas2)
 	{
 		//Matriz 1
@@ -152,7 +156,7 @@ function subm()
 		{
 			for(var c = 0; c < colunas1; c++)
 			{
-				matriz1[l][c] = Number(prompt(`m1 linha ${l} ,coluna ${c} :`));
+				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l} ,coluna ${c} :`));
 			}
 		}
 		//Matriz 2
@@ -169,7 +173,7 @@ function subm()
 		{
 			for(var c = 0; c < colunas2; c++)
 			{
-				matriz2[l][c] = Number(prompt(`m2 linha ${l} ,coluna ${c} :`));
+				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l} ,coluna ${c} :`));
 			}
 		}
 		//subtrair
@@ -192,7 +196,7 @@ function subm()
 	    console.log('A subtracao eh : ' + resultm + '\n');
 	}else
 	{
-		console.log('As matrizes devem ter a msm ordem');
+		console.log('Impossível realizar a operação, por favor escolha matrizes de mesma ordem.');
 	}
 }
 
@@ -200,11 +204,11 @@ function mult()
 {
 	console.log();
 	//Matriz 1
-	var linhas1 = Number(prompt('m1 Digite a quantidade de linhas da matriz: '));
-	var colunas1 = Number(prompt('m1 Digite a quantidade de colunas da matriz: '));
+	var linhas1 = Number(prompt('Matriz 1 - Digite a quantidade de linhas da matriz: '));
+	var colunas1 = Number(prompt('Matriz 1 - Digite a quantidade de colunas da matriz: '));
 	//Matriz 2
-	var linhas2 = Number(prompt('m2 Digite a quantidade de linhas da matriz: '));
-	var colunas2 = Number(prompt('m2 Digite a quantidade de colunas da matriz: '));
+	var linhas2 = Number(prompt('Matriz 2 - Digite a quantidade de linhas da matriz: '));
+	var colunas2 = Number(prompt('Matriz 2 - Digite a quantidade de colunas da matriz: '));
 	if(colunas1 == linhas2)
 	{
 		//Matriz 1
@@ -221,7 +225,7 @@ function mult()
 		{
 			for(var c = 0; c < colunas1; c++)
 			{
-				matriz1[l][c] = Number(prompt(`Matriz 1 linha ${l} ,coluna ${c} :`));
+				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l} ,coluna ${c} :`));
 			}
 		}
 		//Matriz 2
@@ -238,7 +242,7 @@ function mult()
 		{
 			for(var c = 0; c < colunas2; c++)
 			{
-				matriz2[l][c] = Number(prompt(`Matriz 2 linha ${l} ,coluna ${c} :`));
+				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l} ,coluna ${c} :`));
 			}
 		}
 		//multiplicacao
@@ -281,8 +285,8 @@ function mat1()
 {
 	console.log();
 	//Matriz 1
-	var linhas1 = Number(prompt('m1 Digite a quantidade de linhas da matriz: '));
-	var colunas1 = Number(prompt('m1 Digite a quantidade de colunas da matriz: '));
+	var linhas1 = Number(prompt('Matriz 1 - Digite a quantidade de linhas da matriz: '));
+	var colunas1 = Number(prompt('Matriz 1 - Digite a quantidade de colunas da matriz: '));
 	var matriz1 = [];
 	for(var i = 0; i < linhas1; i++)
 	{
@@ -296,7 +300,7 @@ function mat1()
 	{
 		for(var c = 0; c < colunas1; c++)
 		{
-				matriz1[l][c] = Number(prompt(`Matriz 1 linha ${l} ,coluna ${c} :`));
+				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l} ,coluna ${c} :`));
 		}
 	}
 	if(opcao == 4)
@@ -356,4 +360,15 @@ function transposta(matriz1)
 	}
 	console.log('A matris transposta eh : \n');
 	console.log(trasp);
+}
+
+function sobre()
+{
+	console.log('\nIPI - IFPE - Igarassu');
+	console.log('Alunos');
+	console.log('Alan Jose \t->\t Github : Alanjoose');
+	console.log('Flavio Batista \t->\t Github : FlavioBatistaVS');
+	console.log('Heder Matheus \t->\t Github : Matheusblz');
+	console.log('Miriã Araújo \t->\t Github : miriaAS');
+	console.log('Version : Ultimate');
 }

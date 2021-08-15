@@ -64,6 +64,7 @@ function imprimirMenu()
 function somam(matriz1, matriz2)
 {
 	console.log();
+	console.log('Para que a soma ocorra, o numero de linhas e colunas devem ser iguais entre si.\n');
 	//Matriz 1
 	var linhas1 = Number(prompt('Matriz 1 - Digite a quantidade de linhas da matriz: '));
 	var colunas1 = Number(prompt('Matriz 1 - Digite a quantidade de colunas da matriz: '));
@@ -127,13 +128,14 @@ function somam(matriz1, matriz2)
     	console.log('A soma eh : ' + results + '\n');
 	}else
 	{
-		console.log('Impossível realizar a operação, por favor escolha matrizes de mesma ordem.');
+		console.log('\nImpossível realizar a operação, por favor escolha matrizes de mesma ordem.');
 	}
 }
 
 function subm()
 {
 	console.log();
+	console.log('\nPara que a subtracao ocorra, o numero de linhas e colunas devem ser iguais entre si.\n');
 	//Matriz 1
 	var linhas1 = Number(prompt('Matriz 1 - Digite a quantidade de linhas da matriz: '));
 	var colunas1 = Number(prompt('Matriz 1 - Digite a quantidade de colunas da matriz: '));
@@ -196,13 +198,14 @@ function subm()
 	    console.log('A subtracao eh : ' + resultm + '\n');
 	}else
 	{
-		console.log('Impossível realizar a operação, por favor escolha matrizes de mesma ordem.');
+		console.log('\nImpossível realizar a operação, por favor escolha matrizes de mesma ordem.');
 	}
 }
 
 function mult()
 {
 	console.log();
+	console.log('Para que a multiplicacao ocorra, o numero de colunas da primeira deve ser igual ao de linhas da segunda.\n');
 	//Matriz 1
 	var linhas1 = Number(prompt('Matriz 1 - Digite a quantidade de linhas da matriz: '));
 	var colunas1 = Number(prompt('Matriz 1 - Digite a quantidade de colunas da matriz: '));
@@ -277,7 +280,7 @@ function mult()
   		console.log('resultadoFinal: ', resultadoFinal)
 	}else
 	{
-		console.log('Impossível realizar a operação, por favor garanta que o número de colunas da primeira matriz é igual ao número de linhas da segunda matriz.');
+		console.log('\nImpossível realizar a operação, por favor garanta que o número de colunas da primeira matriz é igual ao número de linhas da segunda matriz.');
 	}
 }
 
@@ -327,6 +330,9 @@ function determinante(matriz1)
 		resultd = matriz1[0][0] * matriz1[1][1] - matriz1[0][1] * matriz1[1][0];
 		console.log('O determinante eh : '+resultd);
 	}	
+	else {
+		console.log('\n So funciona ate segunda ordem.')
+	}
 }
 
 function transposta(matriz1)

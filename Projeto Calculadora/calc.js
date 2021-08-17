@@ -34,6 +34,9 @@ do
 			mat1();
 			break;
 		case 6:
+			manu();
+			break;
+		case 7:
 			sobre();
 			break;
 
@@ -50,14 +53,15 @@ function imprimirMenu()
 	{
 		process.stdout.write("*");
 	}
-	console.log('\n~~ OPERACOES NUMERICAS ~~');
+	console.log('\n~~ OPERACOES ~~');
 	console.log('Opções:');
 	console.log('(1) Somar');
 	console.log('(2) Subtrair');
 	console.log('(3) Multiplicar');
 	console.log('(4) Determinante');
 	console.log('(5) Transposta');
-	console.log('(6) Sobre');
+	console.log('(6) Manual');
+	console.log('(7) Sobre');
 	console.log('(0) Sair');
 }
 
@@ -125,10 +129,10 @@ function somam(matriz1, matriz2)
         		results[i][j] = matriz1[i][j] + matriz2[i][j];
         	}
     	}
-    	console.log('A soma eh : ' + results + '\n');
+    	console.log('\nA soma eh : ' + results + '\n');
 	}else
 	{
-		console.log('\nImpossível realizar a operação, por favor escolha matrizes de mesma ordem.');
+		console.log('\nImpossivel realizar a operação, por favor escolha matrizes de mesma ordem.');
 	}
 }
 
@@ -195,10 +199,10 @@ function subm()
 	        	resultm[i][j] = matriz1[i][j] - matriz2[i][j];
 	        }
 	    }
-	    console.log('A subtracao eh : ' + resultm + '\n');
+	    console.log('\nA subtracao eh : ' + resultm + '\n');
 	}else
 	{
-		console.log('\nImpossível realizar a operação, por favor escolha matrizes de mesma ordem.');
+		console.log('\nImpossivel realizar a operacao, por favor escolha matrizes de mesma ordem.');
 	}
 }
 
@@ -277,10 +281,10 @@ function mult()
 	    	} )
   		}
   		const resultadoFinal = matrizCalculada( [ matriz1, matriz2 ] )
-  		console.log('resultadoFinal: ', resultadoFinal)
+  		console.log('\nresultado: ', resultadoFinal);
 	}else
 	{
-		console.log('\nImpossível realizar a operação, por favor garanta que o número de colunas da primeira matriz é igual ao número de linhas da segunda matriz.');
+		console.log('\nImpossivel realizar a operacao, por favor garanta que o numero de colunas da primeira matriz eh igual ao numero de linhas da segunda matriz.');
 	}
 }
 
@@ -308,7 +312,7 @@ function mat1()
 	}
 	if(opcao == 4)
 	{
-	determinante(matriz1);
+		determinante(matriz1);
 	} else if(opcao == 5)
 	{
 		transposta(matriz1);
@@ -323,15 +327,15 @@ function determinante(matriz1)
 	if(ordem1 === 1)
 	{
 		resultd = matriz1[0][0];
-		console.log('O determinante eh : '+resultd);
+		console.log('\nO determinante eh : '+resultd);
 	}
 	if(ordem1 === 2)
 	{
 		resultd = matriz1[0][0] * matriz1[1][1] - matriz1[0][1] * matriz1[1][0];
-		console.log('O determinante eh : '+resultd);
+		console.log('\nO determinante eh : '+resultd);
 	}	
 	else {
-		console.log('\n So funciona ate segunda ordem.')
+		console.log('\n So funciona ate segunda ordem.');
 	}
 }
 
@@ -368,6 +372,20 @@ function transposta(matriz1)
 	console.log(trasp);
 }
 
+function manu()
+{
+	console.log('\nSoma de Matrizes');
+	console.log('');
+	console.log('Subtração de Matrizes');
+	console.log('');
+	console.log('Multiplicação de Matrizes');
+	console.log('');
+	console.log('Cálculo de determinantes');
+	console.log('');
+	console.log('Matriz transposta');
+	console.log('');
+}
+
 function sobre()
 {
 	console.log('\nIPI - IFPE - Igarassu');
@@ -375,6 +393,6 @@ function sobre()
 	console.log('Alan Jose \t->\t Github : Alanjoose');
 	console.log('Flavio Batista \t->\t Github : FlavioBatistaVS');
 	console.log('Heder Matheus \t->\t Github : Matheusblz');
-	console.log('Miriã Araújo \t->\t Github : miriaAS');
+	console.log('Miriã Araujo \t->\t Github : miriaAS');
 	console.log('Version : Ultimate');
 }

@@ -15,15 +15,12 @@ do
 	{
 		case 0:
 			break;
-
 		case 1:
 			somam();
 			break;
-		
 		case 2:
 			subm();
 			break;
-
 		case 3:
 			mult();
 			break;
@@ -41,7 +38,7 @@ do
 			break;
 
 		default:
-			console.log("\n\nDIGITE UMA DAS OPCOES ACIMA");
+			console.log("\n\nDIGITE UMA DAS OPÇÕES ACIMA");
 	}
 } while (opcao != 0);
 
@@ -53,7 +50,7 @@ function imprimirMenu()
 	{
 		process.stdout.write("*");
 	}
-	console.log('\n~~ OPERACOES ~~');
+	console.log('\n~~ OPERAÇÕES ~~');
 	console.log('Opções:');
 	console.log('(1) Somar');
 	console.log('(2) Subtrair');
@@ -129,7 +126,7 @@ function somam(matriz1, matriz2)
         		results[i][j] = matriz1[i][j] + matriz2[i][j];
         	}
     	}
-    	console.log('\nA soma eh : ' + results + '\n');
+    	console.log('\nA soma é : ' + results + '\n');
 	}else
 	{
 		console.log('\nImpossivel realizar a operação, por favor escolha matrizes de mesma ordem.');
@@ -199,7 +196,7 @@ function subm()
 	        	resultm[i][j] = matriz1[i][j] - matriz2[i][j];
 	        }
 	    }
-	    console.log('\nA subtracao eh : ' + resultm + '\n');
+	    console.log('\nA subtracao é : ' + resultm + '\n');
 	}else
 	{
 		console.log('\nImpossivel realizar a operacao, por favor escolha matrizes de mesma ordem.');
@@ -327,12 +324,12 @@ function determinante(matriz1)
 	if(ordem1 === 1)
 	{
 		resultd = matriz1[0][0];
-		console.log('\nO determinante eh : '+resultd);
+		console.log('\nO determinante é : '+resultd);
 	}
 	if(ordem1 === 2)
 	{
 		resultd = matriz1[0][0] * matriz1[1][1] - matriz1[0][1] * matriz1[1][0];
-		console.log('\nO determinante eh : '+resultd);
+		console.log('\nO determinante é : '+resultd);
 	}	
 	else {
 		console.log('\n So funciona ate segunda ordem.');
@@ -368,22 +365,21 @@ function transposta(matriz1)
 			}
 		}
 	}
-	console.log('A matris transposta eh : \n');
+	console.log('A matriz transposta é : \n');
 	console.log(trasp);
 }
 
 function manu()
 {
-	console.log('\nSoma de Matrizes');
-	console.log('');
-	console.log('Subtração de Matrizes');
-	console.log('');
-	console.log('Multiplicação de Matrizes');
-	console.log('');
-	console.log('Cálculo de determinantes');
-	console.log('');
-	console.log('Matriz transposta');
-	console.log('');
+	console.log('\nSoma de Matrizes\n');
+	console.log('Para que seja realizada a soma entre matrizes, ambas necessitam possuir mesma ordem. (Cada elemeto de uma matriz é somado com o elemento de mesmo endereço na segunda matriz).');
+	console.log('\nSubtração de Matrizes\n');
+	console.log('A subtração compartilha do mesmo principio da soma. (Cada elemeto de uma matriz é subtraido com o elemento de mesmo endereço na segunda matriz).');
+	console.log('\nMultiplicação de Matrizes\n');
+	console.log('Na multiplicação o número de colunas da primeira matriz deve ser igual ao de linhas da segunda. (Os elementos da primeira linha da matriz A se multiplicam com os de enderço correspondente na matriz B, continua-se até o fim. Onde é realizada uma soma do resultado desta multiplicação).');
+	console.log('\nMatriz transposta\n');
+	console.log('É o nome dado à matriz que passa por uma troca no arranjo de suas linhas para colunas. (Os elementos que estavam arranjados em linhas tornam-se colunas e os que estavam em colunas viram linhas).');
+	console.log('\nFonte : Brasil escola');
 }
 
 function sobre()

@@ -1,3 +1,15 @@
+/*
+ *
+ * Instituto Federal de Educação, Ciência e Tecnologia - IFPE
+ * Cursos: Informática para Internet | Sistemas para Internet
+ * Componentes Curriculares: Lógica de Programação e Estrutura de Dados | Introdução à Programação Imperativa
+ * Professor: Allan Lima - allan.lima@igarassu.ifpe.edu.br
+ *
+ * Nome completo: Alan Jose, Flávio Batista, Heder Matheus, Miriã Araujo.
+ * Curso: TSI ou IPI
+ * Segunda Avalição Individual
+ *
+ */
 const prompt = require('prompt-sync')();
 var opcao = - 1;
 

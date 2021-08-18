@@ -5,7 +5,7 @@
   
   ### NOÇÃO SOBRE MATRIZES
 <p>Matrizes são tabelas formadas por 'células' que são um espaço reservado à um numero,
-contendo linhas e colunas onde esses elementos relacionam-se entre sí.<br>
+contendo linhas e colunas onde esses elementos relacionam-se entre si.<br>
   (Fonte: Brasil escola).</p>
 </div><br>
 

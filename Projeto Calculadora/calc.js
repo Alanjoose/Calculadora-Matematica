@@ -101,7 +101,7 @@ function somam(matriz1, matriz2)
 		{
 			for(var c = 0; c < colunas1; c++)
 			{
-				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l} ,coluna ${c} :`));
+				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l+1} ,coluna ${c+1} :`));
 			}
 		}
 		//Matriz 2
@@ -118,7 +118,7 @@ function somam(matriz1, matriz2)
 		{
 			for(var c = 0; c < colunas2; c++)
 			{
-				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l} ,coluna ${c} :`));
+				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l+1} ,coluna ${c+1} :`));
 			}
 		}
 		//somar
@@ -171,7 +171,7 @@ function subm()
 		{
 			for(var c = 0; c < colunas1; c++)
 			{
-				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l} ,coluna ${c} :`));
+				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l+1} ,coluna ${c+1} :`));
 			}
 		}
 		//Matriz 2
@@ -188,7 +188,7 @@ function subm()
 		{
 			for(var c = 0; c < colunas2; c++)
 			{
-				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l} ,coluna ${c} :`));
+				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l+1} ,coluna ${c+1} :`));
 			}
 		}
 		//subtrair
@@ -241,7 +241,7 @@ function mult()
 		{
 			for(var c = 0; c < colunas1; c++)
 			{
-				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l} ,coluna ${c} :`));
+				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l+1} ,coluna ${c+1} :`));
 			}
 		}
 		//Matriz 2
@@ -258,7 +258,7 @@ function mult()
 		{
 			for(var c = 0; c < colunas2; c++)
 			{
-				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l} ,coluna ${c} :`));
+				matriz2[l][c] = Number(prompt(`Matriz 2 - linha ${l+1} ,coluna ${c+1} :`));
 			}
 		}
 		//multiplicacao
@@ -316,7 +316,7 @@ function mat1()
 	{
 		for(var c = 0; c < colunas1; c++)
 		{
-				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l} ,coluna ${c} :`));
+				matriz1[l][c] = Number(prompt(`Matriz 1 - linha ${l+1} ,coluna ${c+1} :`));
 		}
 	}
 	if(opcao == 4)
@@ -389,6 +389,8 @@ function manu()
 	console.log('A subtração compartilha do mesmo principio da soma. (Cada elemeto de uma matriz é subtraido com o elemento de mesmo endereço na segunda matriz).');
 	console.log('\nMultiplicação de Matrizes\n');
 	console.log('Na multiplicação o número de colunas da primeira matriz deve ser igual ao de linhas da segunda. (Os elementos da primeira linha da matriz A se multiplicam com os de enderço correspondente na matriz B, continua-se até o fim. Onde é realizada uma soma do resultado desta multiplicação).');
+	console.log('\nCálculo de determinantes\n');
+	console.log('Para que seja realizado o cálculo de determinantes a matriz deve possuir ordem quadrada, ou seja, matrizes que possuem o número de linhas e colunas iguais.');
 	console.log('\nMatriz transposta\n');
 	console.log('É o nome dado à matriz que passa por uma troca no arranjo de suas linhas para colunas. (Os elementos que estavam arranjados em linhas tornam-se colunas e os que estavam em colunas viram linhas).');
 	console.log('\nFonte : Brasil escola');
